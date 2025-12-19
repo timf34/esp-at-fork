@@ -93,6 +93,8 @@ ESP_AT_CMD_SET_FIRST_INIT_FN(esp_at_driver_cmd_regist, 19);
 #ifdef CONFIG_AT_ETHERNET_SUPPORT
 ESP_AT_CMD_SET_FIRST_INIT_FN(esp_at_eth_cmd_regist, 20);
 #endif
+// Custom firmware buffer commands for OTA
+ESP_AT_CMD_SET_FIRST_INIT_FN(esp_at_fw_buffer_cmd_regist, 25);
 
 void esp_at_cmd_set_register(void)
 {

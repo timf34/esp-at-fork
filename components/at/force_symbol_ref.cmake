@@ -101,3 +101,8 @@ endif()
 if (CONFIG_AT_USER_COMMAND_SUPPORT)
     target_link_libraries(${COMPONENT_LIB} INTERFACE "-u esp_at_user_cmd_regist")
 endif()
+
+# Custom firmware buffer commands for OTA
+target_link_libraries(${COMPONENT_LIB} INTERFACE "-u esp_at_fw_buffer_cmd_regist")
+
+
